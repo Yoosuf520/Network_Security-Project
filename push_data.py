@@ -40,7 +40,7 @@ class NetworkDataExtract():
     def insert_data_mongodb(self,records,database,collection):
         try:
            
-            self.mongo_client=pymongo.MongoClient(MONGO_DB_URL)
+            self.mongo_client=pymongo.MongoClient(MONGO_DB_URL,tlsCAFile=ca)
             self.database = self.mongo_client[database]
 
             self.collection=self.database[collection]
