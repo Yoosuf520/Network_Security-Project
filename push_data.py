@@ -39,13 +39,16 @@ class NetworkDataExtract():
 
     def insert_data_mongodb(self,records,database,collection):
         try:
+            self.database=database
+            self.collection=collection
+            self.records=records
            
-            self.mongo_client=pymongo.MongoClient(MONGO_DB_URL,tlsCAFile=ca)
-            self.database = self.mongo_client[database]
+            self.mongo_client=pymongo.MongoClient(MONGO_DB_URL)
+            self.database = self.mongo_client[self.database]
 
-            self.collection=self.database[collection]
-            self.collection.insert_many(records)
-            return(len(records))
+            self.collection=self.database[self.collection]
+            self.collection.insert_many(self.records)
+            return(len(self.records))
 
         except Exception as e:
             raise NetworkSecurityException(e,sys)
