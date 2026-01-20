@@ -1,7 +1,0 @@
-[ 2026-01-19 11:44:36,410, ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
-[ 2026-01-19 11:44:36,421, ] 107 dagshub - INFO - Accessing as Yoosuf520
-[ 2026-01-19 11:44:37,694, ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Yoosuf520/Network_Security-Project "HTTP/1.1 200 OK"
-[ 2026-01-19 11:44:39,037, ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
-[ 2026-01-19 11:44:39,040, ] 107 dagshub - INFO - Initialized MLflow to track repo "Yoosuf520/Network_Security-Project"
-[ 2026-01-19 11:44:39,042, ] 107 dagshub - INFO - Repository Yoosuf520/Network_Security-Project initialized!
-[ 2026-01-19 11:44:39,043, ] 23 root - INFO - Initiate the data ingestion
