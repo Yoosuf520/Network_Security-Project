@@ -82,6 +82,7 @@ venv.bak/
 # *.onnx
 artifact/
 artifacts/
+logs/
 
 # Logs
 *.log
